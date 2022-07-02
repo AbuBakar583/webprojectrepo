@@ -26,12 +26,6 @@ namespace realestateproject.Controllers
 
             return View();
         }
-        public ActionResult SetDetails(string Firstname, string Lastname,string Email,int Phonenumber)
-            { 
-            ViewBag.Firstname = Firstname;
-            ViewBag.Lastname = Lastname;
-            ViewBag.Email = Email;
-            ViewBag.Phonenumber = Phonenumber;
-        }
+
     }
 }

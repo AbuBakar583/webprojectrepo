@@ -34,47 +34,71 @@
     <section class="footer">
 
         <div class="footer-container">
+            <div><form action="SetDetails" method="post">
+                <label>First name</label>
+                <input type="text" name="Firstname" placeholder="Firstname" />
+                <br />
+                <label>Last name</label>
+                <input type="text" name="Lastname" placeholder="Lastname" />
+                <br />
+                <label>E-Mail</label>
+                <input type="email" name="Email" placeholder="E-Mail" />
+                <br />
+                <label>Phone Number</label>
+                <input type="number" name="Phonenumber" placeholder="Phonenumber" />
+                <br />
 
-            <div class="box-container">
+                <input type="submit" />
+               
 
-                <div class="box">
-                    <h3>branch location</h3>
-                    <a href="#">Pakistan</a>
-                    <a href="#">USA</a>
-                    <a href="#">Canada</a>
-                    <a href="#">russia</a>
-                    <a href="#">japan</a>
-                </div>
-
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#">home</a>
-                    <a href="#">services</a>
-                    <a href="#">featured</a>
-                    <a href="#">agents</a>
-                    <a href="#">contact</a>
-                </div>
-
-                <div class="box">
-                    <h3>links</h3>
-                    <a href="#">my account</a>
-                    <a href="#">my favorite</a>
-                    <a href="#">my list</a>
-                </div>
-
-                <div class="box">
-                    <h3>follow us</h3>
-                    <a href="#">facebook</a>
-                    <a href="#">twitter</a>
-                    <a href="#">instagram</a>
-                    <a href="#">linkedin</a>
-                </div>
-
+            </form>
             </div>
+            <div>
+                @ViewBag.Firstname = Firstname;
+                @ViewBag.Lastname = Lastname;
+                @ViewBag.Email = Email;
+                @ViewBag.Phonenumber = Phonenumber;
+            </div>
+                <div class="box-container">
 
-            <div class="credit">created by <span> ABUBAKAR </span> | all rights reserved! </div>
+                    <div class="box">
+                        <h3>branch location</h3>
+                        <a href="#">Pakistan</a>
+                        <a href="#">USA</a>
+                        <a href="#">Canada</a>
+                        <a href="#">russia</a>
+                        <a href="#">japan</a>
+                    </div>
 
-        </div>
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="#">home</a>
+                        <a href="#">services</a>
+                        <a href="#">featured</a>
+                        <a href="#">agents</a>
+                        <a href="#">contact</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>links</h3>
+                        <a href="#">my account</a>
+                        <a href="#">my favorite</a>
+                        <a href="#">my list</a>
+                    </div>
+
+                    <div class="box">
+                        <h3>follow us</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">twitter</a>
+                        <a href="#">instagram</a>
+                        <a href="#">linkedin</a>
+                    </div>
+
+                </div>
+
+                <div class="credit">created by <span> ABUBAKAR </span> | all rights reserved! </div>
+
+</div>
 
     </section>
     <script>
